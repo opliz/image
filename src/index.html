@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>odxpo - Ảnh Đẹp Mỗi Ngày</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+  <link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link href="assets/css/style.css" rel='stylesheet' type='text/css' />
+  <link href="assets/css/text-effect.css" rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/default-skin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script async defer src="assets/js/buttons.js"></script>
+  <script src="assets/js/text-effect.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129810698-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129810698-3');
+  </script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=2007872755978718&autoLogAppEvents=1"></script>
+  <app-root></app-root>
+  <script>
+    $(document).ready(function(){
+      if($(".btn-top").length > 0){
+        $(window).scroll(function () {
+          var e = $(window).scrollTop();
+          if (e > 300) {
+            $(".btn-top").show()
+          } else {
+            $(".btn-top").hide()
+          }
+        });
+        $(".btn-top").click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          })
+        });
+      }
+    });
+  </script>
+  <!-- script-for-menu -->
+  <script>
+    $(function(){
+      $( "span.menu" ).click(function() {
+        $( "ul.nav1" ).slideToggle( 300, function() {
+            // Animation complete.
+        });
+      });
+    });
+    
+    $(function(){
+      var t=window.location.href;
+      $(".nav1 a").each(function(){
+        if(this.href==t) {
+          $(this).addClass("active");
+        }
+      });
+    });
+  </script>
+  <!-- /script-for-menu -->
+  <script>
+    $(function(){
+      $(".fb-comments").attr("data-href", window.location.href);
+    });
+  </script>
+</body>
+</html>

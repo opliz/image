@@ -1,0 +1,45 @@
+.grid {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+h3 {
+  color: #6E6E6E;
+  font-size: 2em;
+  margin: 0;
+  font-family: 'Dorsa', sans-serif;
+  letter-spacing: 2px;
+  margin: 50px;
+}
+
+ngx-masonry {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 50px;
+  font-family: 'Dorsa', sans-serif;
+  font-size: 2em;
+}
+
+.item {
+  background-color: #f1f1f1;
+  background-size: cover;
+  padding: 2px;
+}
+
+.item a {
+  cursor: pointer;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}

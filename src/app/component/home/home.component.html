@@ -1,0 +1,23 @@
+<!-- gallery -->
+<div class="gallery-top">
+  <!-- container -->
+  <div class="container">
+      <ngx-masonry (layoutComplete)="layoutComplete($event)" [options]="masonryOptions" [useImagesLoaded]="true">
+        <ngxMasonryItem *ngFor="let image of images; let i = index" class="item col-md-4">
+          <a (click)="openGallery(i)">
+            <img width="100%" src="{{image.src_m}}" alt="{{image.title_o}}" title="{{image.title_o}}">
+          </a>
+        </ngxMasonryItem>
+      </ngx-masonry>
+      <div class="clearfix"> </div>
+      <div class="row text-center">
+        <button *ngIf="loadMore" type="button" class="btn btn-secondary" (click)="showMoreImages()">Show More Images</button>
+        <!-- <button *ngIf="count % 50 == 0 && count < total" type="button" class="btn btn-secondary" (click)="showMoreImages()">Show More Images</button> -->
+        <!-- <button type="button" class="btn btn-secondary" (click)="showMoreImages()">Show More Images</button> -->
+        <h3 *ngIf="!loadMore" style="color: red;">No More Images</h3>
+      </div>
+  </div>
+  <!-- //container -->
+</div>
+<!-- //gallery -->
+<app-photo-swipe #photoSwipe></app-photo-swipe>

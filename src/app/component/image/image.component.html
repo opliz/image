@@ -1,0 +1,15 @@
+<div class="gallery-top">
+    <div class="container" *ngIf="image">
+        <h3 class="title">{{image.title_o}}</h3>
+        <div class="image-detail">
+            <img src="{{image.src}}" alt="{{photoId}}" width="70%" title="{{image.title_o}}">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="comment" class="col-md-6 col-md-offset-3">
+                <div class="fb-comments" data-href="http://media.odxpo.com" data-numposts="10"></div>
+            </div>
+        </div>
+    </div>
+</div>

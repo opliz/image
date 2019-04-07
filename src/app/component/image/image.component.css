@@ -1,0 +1,20 @@
+.image-detail {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.image-detail a {
+    cursor: pointer;
+}
+
+.title {
+  color: red;
+  text-align: center;
+  /* font-size: 2em; */
+  margin: 0;
+  /* font-weight: bold; */
+  font: 500 16px/46px Oswald,arial;
+  /* letter-spacing: 2px; */
+  margin: 10px;
+}
